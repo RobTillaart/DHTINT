@@ -1,3 +1,11 @@
+
+[![Arduino CI](https://github.com/RobTillaart/DHTINT/workflows/Arduino%20CI/badge.svg)](https://github.com/marketplace/actions/arduino_ci)
+[![Arduino-lint](https://github.com/RobTillaart/DHTINT/actions/workflows/arduino-lint.yml/badge.svg)](https://github.com/RobTillaart/DHTINT/actions/workflows/arduino-lint.yml)
+[![JSON check](https://github.com/RobTillaart/DHTINT/actions/workflows/jsoncheck.yml/badge.svg)](https://github.com/RobTillaart/DHTINT/actions/workflows/jsoncheck.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/RobTillaart/DHTINT/blob/master/LICENSE)
+[![GitHub release](https://img.shields.io/github/release/RobTillaart/DHTINT.svg?maxAge=3600)](https://github.com/RobTillaart/DHTINT/releases)
+
+
 # DHTINT
 
 Arduino library for DHT sensors - integer only
@@ -13,22 +21,17 @@ usable for the very small processors like the ATTINY 45 or 85.
 As the library only uses integers it will not trigger the including of 
 the floating point math libraries, saving additional memory.
 
-
-## Examples
-
-Examples can be found at the DHTNEW library, just change the type of the 
-DHT object from DHTNEW to DHTINT.
+Relates to - https://github.com/RobTillaart/DHTNew
 
 
-## Compare DHTNEW
-
+### Compare DHTINT versus DHTNEW
 
 Sketch: ..\example\dhtint_minimum.ino
 
 replaced DHTINT with DHTNEW
 
 
-| platform | Library | sketch size | variables |
+| platform | library | sketch size | variables |
 |:--------:|:--------|------------:|----------:|
 |  UNO     | DHTNEW  |        5730 |       341 |
 |  UNO     | DHTINT  |        3978 |       321 |
