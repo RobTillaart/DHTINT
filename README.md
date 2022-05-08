@@ -13,15 +13,15 @@ Arduino library for DHT sensors - integer only
 
 ## Description
 
-This is an **experimental** integer only version of the DHTNEW library.
+This is an **experimental** integer only library, 
+based upon - https://github.com/RobTillaart/DHTNew - version 0.4.12
 
-As it uses only integers only to reduce footprint, so it becomes more 
-usable for the very small processors like the ATTINY 45 or 85. 
+Goal is to reduce footprint by using integer math only.
+This way the lib becomes more usable for processors like the ATTINY 45 or 85. 
 
-As the library only uses integers it will not trigger the including of 
-the floating point math libraries, saving additional memory.
-
-Relates to - https://github.com/RobTillaart/DHTNew
+As the library only uses integer math it will not trigger the automatic including of 
+the floating point math libraries. 
+This will save additional memory unless other code uses floating point math.
 
 
 ### Compare DHTINT versus DHTNEW

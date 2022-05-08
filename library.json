@@ -1,7 +1,7 @@
 {
   "name": "DHTINT",
   "keywords": "DHT11, DHT22, DHT33, DHT44, AM2301, AM2302, AM2303, autodetect, offset, interrupt, powerDown",
-  "description": "Arduino library for DHT sensors - integer only.",
+  "description": "Arduino library for DHT sensors. Integer only to save footprint.",
   "authors": 
   {
     "name": "Rob Tillaart",
