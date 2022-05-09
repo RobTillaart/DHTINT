@@ -160,25 +160,17 @@ int DHTINT::_read()
 
   if (_type == 22) // DHT22, DHT33, DHT44, compatible
   {
-    _humidity = (_bits[0] * 256 + _bits[1] + 5) / 10;
-    int16_t t = ((_bits[2] & 0x7F) * 256 + _bits[3]);
-    if (t == 0)
+    _humidity = (_bits[0] * 256 + _bits[1]);
+    _temperature = ((_bits[2] & 0x7F) * 256 + _bits[3]);
+     if((_bits[2] & 0x80) == 0x80 )
     {
-      _temperature = 0;     // prevent -0.0;
-    }
-    else
-    {
-      _temperature = (t + 5 ) / 10;
-      if((_bits[2] & 0x80) == 0x80 )
-      {
-        _temperature = -_temperature;
-      }
+      _temperature = -_temperature;
     }
   }
   else // if (_type == 11)  // DHT11, DH12, compatible
   {
-    _humidity    = _bits[0] + (_bits[1] + 5) / 10;
-    _temperature = _bits[2] + (_bits[3] + 5) / 10;
+    _humidity    = _bits[0] * 10 + _bits[1];
+    _temperature = _bits[2] * 10 + _bits[3];
   }
 
   // HEXDUMP DEBUG
