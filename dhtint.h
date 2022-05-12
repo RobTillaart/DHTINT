@@ -72,8 +72,8 @@ public:
   uint32_t lastRead()                    { return _lastRead; };
 
   // preferred interface
-  int      getHumidity()                 { return _humidity; };
-  int      getTemperature()              { return _temperature; };
+  int      getHumidity();
+  int      getTemperature();
 
   // adding offsets works well in normal range
   // might introduce under- or overflow at the ends of the sensor range

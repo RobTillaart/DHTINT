@@ -143,7 +143,7 @@ int DHTINT::getHumidity()
 };
 
 
-int getTemperature()
+int DHTINT::getTemperature()
 {
   if (_tempOffset != 0)
   {
