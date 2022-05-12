@@ -130,26 +130,15 @@ int DHTINT::read()
 }
 
 
-
 int DHTINT::getHumidity()
 {
-  if (_humOffset != 0)
-  {
-    _humidity += _humOffset;
-    if (_humidity < 0) _humidity = 0;
-    if (_humidity > 100) _humidity = 100;
-  }
-  return (_humidity + 5)/10; 
+  return (_humidity + _humOffset + 5) / 10; 
 };
 
 
 int DHTINT::getTemperature()
 {
-  if (_tempOffset != 0)
-  {
-    _temperature += _tempOffset;
-  }
-  return (_temperature + 5)/10; 
+  return (_temperature + _tempOffset + 5) / 10; 
 };
 
 
