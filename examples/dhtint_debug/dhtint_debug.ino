@@ -13,7 +13,7 @@
 //  pin 4 : GND
 
 
-#include <dhtint.h>
+#include "dhtint.h"
 
 DHTINT mySensor(5);   //  ESP 16    UNO 5    MKR1010 5
 
