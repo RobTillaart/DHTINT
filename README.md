@@ -28,6 +28,8 @@ As the library only uses integer math it will not trigger the automatic includin
 the floating point math libraries.
 This will save additional memory unless other code uses floating point math.
 
+Feedback is as always welcome.
+
 
 ### Compare DHTINT versus DHTNEW
 
@@ -38,8 +40,8 @@ replaced DHTINT with DHTNEW
 
 | platform | library | sketch size | variables |
 |:--------:|:--------|------------:|----------:|
-|  UNO     | DHTNEW  |        5730 |       341 |
-|  UNO     | DHTINT  |        3978 |       321 |
+|  UNO R3  | DHTNEW  |        5730 |       341 |
+|  UNO R3  | DHTINT  |        3978 |       321 |
 |          | delta   |        1752 |        20 |
 |          |         |             |           |
 |  ESP32   | DHTNEW  |      206730 |     13464 |
