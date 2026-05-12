@@ -58,6 +58,7 @@ Gain is most substantial for the UNO platform.
 - https://github.com/RobTillaart/DHTNEW library with most active development.
 - https://github.com/RobTillaart/DHT_Simulator for testing.
 - https://github.com/RobTillaart/Temperature (conversions, dewPoint, heat index etc.)
+- https://github.com/RobTillaart/map2Colour - mapping a value (temp/hum) to a colour
 
 
 ## Interface
